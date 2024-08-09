@@ -1,4 +1,22 @@
 @font-face {
-  src: url(../fonts/Inter.ttc);
-  font-family: Inter;
+  font-family: "Inter-thin";
+  font-weight: 100;
+  src: url("../fonts/Inter-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter-regular";
+  font-weight: 400;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter-bold";
+  font-weight: 700;
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter-xBold";
+  font-weight: 900;
+  src: url("../fonts/Inter-ExtraBold.woff2") format("woff2");
 }

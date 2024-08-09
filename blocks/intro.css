@@ -1,13 +1,7 @@
 .intro {
-  max-width: 100%;
-  margin: 91px 0 92px 141px;
-  display: flex;
-  flex-direction: column;
-}
-.intro__content {
-  width: 732px;
-  display: flex;
-  justify-content: end;
+  max-width: 984px;
+  min-height: 607px;
+  margin: 91px auto 92px;
 }
 
 .intro__tittle {
@@ -19,7 +13,11 @@
   font-size: 54px;
   line-height: 58px;
 }
-
+.intro__content {
+  width: 732px;
+  display: flex;
+  justify-content: end;
+}
 .intro__description {
   width: 738px;
   height: 136px;

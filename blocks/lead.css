@@ -1,13 +1,21 @@
 .lead {
+  max-width: 984px;
+  width: 100%;
+  min-height: 983px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 .lead__tittle {
-  height: 200px;
-  width: 720px;
+  max-width: 720px;
+  width: 100%;
+  min-height: 200px;
+  height: 100%;
   font-size: 96px;
   line-height: 100px;
+  font-family: "Inter-xBold", sans-serif;
   text-align: center;
   font-weight: 900;
   margin: 91px 0 0;
@@ -16,7 +24,7 @@
   height: 72px;
   width: 720px;
   font-size: 30px;
-  font-weight: 400;
+  font-family: "Inter-regular" sans-serif;
   line-height: 36px;
   text-align: center;
   margin: 32px 0 64px;
