@@ -5,11 +5,13 @@
     line-height: 79px;
   }
 
+  .lead__subtitle {
+    margin: 25px 0 30px;
+  }
+
   .lead__image {
     max-width: 768px;
-    width: 100%;
     min-height: 480px;
-    height: 100%;
   }
 
   .intro {
@@ -21,9 +23,10 @@
     max-width: 707px;
     font-size: 45px;
     line-height: 49px;
+    margin: 0 0 50px;
   }
 
-  .photo__grid {
+  .photo-grid {
     max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -35,17 +38,12 @@
 
   .places {
     max-width: 720px;
-    width: 100%;
     margin: auto;
   }
 
   .place {
     grid-template-columns: 340px 1fr;
-  }
-
-  .place__photo {
-    max-width: 352px;
-    min-height: 264px;
+    gap: 48px 28px;
   }
 
   .place__title {
@@ -54,139 +52,130 @@
     line-height: 46px;
     margin: 110px 0 0;
   }
-
-  .place__photo {
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 163%;
+  }
+  .place__image {
     max-width: 340px;
-    width: 100%;
     min-height: 340px;
-    height: 100%;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .photo__grid {
+  .photo-grid {
     max-width: 520px;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
   .photo__grid_item {
-    max-width: 284px;
-    min-height: 213px;
+    max-width: 288px;
+    min-height: 216px;
+  }
+
+  .places {
+    max-width: 520px;
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .place__title {
+    margin-top: 62px;
+  }
+
+  .place__website {
+    margin: 30px 0;
   }
 }
 
 @media screen and (max-width: 320px) {
   .lead__title {
     max-width: 228px;
-
     margin-top: 50px;
     font-size: 40px;
-    font-weight: 900;
     line-height: 44px;
   }
 
   .lead__subtitle {
     font-size: 16px;
-    font-weight: 400;
     line-height: 20px;
     margin: 16px 0 40px;
   }
 
   .lead__image {
     max-width: 320px;
-    width: 100%;
     min-height: 200px;
-    height: 100%;
   }
 
   .intro {
     max-width: 288px;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 64px auto 64px;
+    margin: 64px auto 38px;
   }
 
   .intro__title {
     max-width: 288px;
-    width: 100%;
     font-size: 32px;
-    font-weight: 900;
     line-height: 35px;
-  }
-
-  .places {
-    max-width: 320px;
-    width: 100%;
-    margin: auto;
-  }
-
-  .places_land {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-
-  .places__photos {
-    max-width: 288px;
-    width: 100%;
-    min-height: 216px;
-    height: 100%;
-    margin: auto;
-  }
-
-  .places__title {
-    grid-area: title;
-    max-width: 340px;
-    width: 100%;
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 35px;
-    margin: 110px 0 0;
-  }
-
-  .places__artist {
-    grid-area: artist;
-  }
-
-  .places__description {
-    grid-area: description;
-  }
-  .places__subtitle-title {
-    color: #aaaaaa;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.52px;
-    letter-spacing: 0.12em;
-    padding-bottom: 8px;
-  }
-  .places__subtitle {
-    max-width: 352px;
-    width: 100%;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
     margin: 0px;
   }
-  .places__text {
-    max-width: 352px;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
+
+  .intro__content {
+    align-items: end;
+  }
+
+  .intro__description {
+    line-height: 30px;
+    margin: 40px 0 10px;
+  }
+
+  .intro__text {
     line-height: 163%;
   }
 
-  .places__photo_land {
-    grid-area: image;
-    max-width: 320px;
-    width: 100%;
-    min-height: 320px;
-    height: 100%;
+  .photo-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 
-  .places__button {
-    grid-area: button;
+  .place {
+    display: block;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin: 73px 16px 30px;
+  }
+
+  .place__website {
+    margin: 0 16px 30px;
+  }
+
+  .place__image {
+    max-width: 320px;
+    min-height: 320px;
+    box-shadow: none;
+  }
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 163%;
+    margin: 30px 16px;
+  }
+
+  .place__button {
+    margin: 0px 16px;
+  }
+
+  .footer {
+    margin-top: 65px;
   }
 }
