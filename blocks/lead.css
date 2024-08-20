@@ -24,6 +24,44 @@
 }
 .lead__image {
   max-width: 984px;
+  width: 100%;
   object-fit: cover;
   filter: grayscale(100%);
+}
+
+@media screen and (max-width: 768px) {
+  .lead__title {
+    max-width: 530px;
+    font-size: 75px;
+    line-height: 79px;
+  }
+
+  .lead__subtitle {
+    margin: 25px 0 30px;
+  }
+
+  .lead__image {
+    max-width: 768px;
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .lead__title {
+    max-width: 228px;
+    margin-top: 50px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .lead__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 16px 0 40px;
+  }
+
+  .lead__image {
+    max-width: 320px;
+    min-height: 200px;
+  }
 }
